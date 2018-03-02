@@ -53,9 +53,9 @@ void * add(void * _set, const void * _element) {
   assert(element > heap && element < heap + MANY);
 
   if (*element == MANY) {
-    * (int *)element = heap - set;
+    * (int *)element = set - heap;
   } else {
-    assert(* element == heap - set);
+    assert(* element == set - heap);
   }
 
   return (void *) element;
