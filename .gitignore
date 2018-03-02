@@ -1,5 +1,17 @@
+# Object files
 *.o
+
+# Vim Swap files
 *.swp
+
+# Precompiler headers
 *.h.gch
+
+# Common executable
 a.out
+
+# Mac Finder Custom View Settings
 .DS_Store
+
+# Debug symbols
+a.out.dSYM/
