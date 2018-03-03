@@ -51,10 +51,11 @@ void * add(void * _set, const void * _element) {
 
   if (!element->in) {
     element->in = set;
-    ++element->count, ++set->count;
   } else {
     assert(element->in == set);
   }
+
+  ++element->count, ++set->count;
 
   return (void *) element;
 }
